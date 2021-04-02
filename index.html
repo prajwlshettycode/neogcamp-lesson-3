@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Prajwal's component library</h1>
+    
+    <h1 >Prajwal's component library</h1>
     <p>I am learning frontend. I want to make a library which would make all my projects look good and consistent.</p>
 
     <hr>
@@ -24,37 +26,37 @@
     <h2>@container</h2>
 
     <h3>@fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+    <div class="container-fluid">This is a fluid container and it will go till the end of the page</div>
 
     <h3>@center container</h3>
-    <div>This is a centered container and it will go till the specified width</div>
+    <div class="container container-center">This is a centered container and it will go till the specified width</div>
 
     <hr>
 
     <h2>@links</h2>
 
-    <a href="/">Primary link</a></br>
-    <a href="/">Secondary link</a>
+    <a href="/" class="link link-primary">Primary link</a>
+    <a href="/" class="link link-secondary">Secondary link</a>
 
     <hr>
 
     <h2>@lists</h2>
     <h3>unordered list</h3>
-    <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
+    <ul class="list-non-bullet">
+        <li >Item One</li>
+        <li >Item Two</li>
+        <li >Item Three</li>
     </ul>
 
     <h3>unordered inline list</h3>
-    <ul>
-        <li>Inline Item One</li>
-        <li>Inline Item two</li>
-        <li>Inline Item three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline Item One</li>
+        <li class="list-item-inline">Inline Item two</li>
+        <li class="list-item-inline">Inline Item three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>Apple</li>
         <li>Bat</li>
         <li>Cat</li>
@@ -64,17 +66,17 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a href="/" class="link link-active">Home</a>
             </li>
-            <li>
-                <a href="/">Products</a>
+            <li class="list-item-inline">
+                <a href="/" class="link">Products</a>
             </li>
-            <li>
-                <a href="/">About</a>
+            <li class="list-item-inline">
+                <a href="/"class="link">About</a>
             </li>
         </ul>
     </nav>
@@ -83,9 +85,9 @@
 
     <h2>@header</h2>
 
-    <header>
-        <img src="images/hero.svg" />
-        <h1>heading inside the header</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/hero.svg" />
+        <h1 class="hero-heading">heading inside the <span class="heading-inverted">header</span> </h1>
     </header>
 
     <hr>
@@ -93,26 +95,49 @@
     <h2>@section</h2>
 
     
-    <section>
-        <h3>white section</h3>
-        <p>This will have white background</p>
+    <section class="section">
+        <div class="container container-center">
+        <h1>white section</h1>
+        <p>This will have white background. this is a sample paragraph.
+            This will have white background. this is a sample paragraph.
+            This will have white background. this is a sample paragraph.
+            This will have white background. this is a sample paragraph.
+            This will have white background. this is a sample paragraph.
+            This will have white background. this is a sample paragraph.
+        </p>
+    </div>
     </section>
 
-    <section>
-        <h3>off white section</h3>
-        <p>This will have gray background</p>
+    <section class="section ow">
+        <div class="container container-center">
+        <h1>off white section</h1>
+        <p>
+            This will have gray background. this is a sample paragraph.This will have gray background. this is a sample paragraph.
+            This will have gray background. this is a sample paragraph.
+            This will have gray background. this is a sample paragraph.
+            This will have gray background. this is a sample paragraph.
+            This will have gray background. this is a sample paragraph.
+            This will have gray background. this is a sample paragraph.
+        </p>
+    </div>
     </section>
 
     <hr>
 
     <h2>@footer</h2>
 
-    <footer>
-        <div>some small heading inside footer</div>
-        <ul>
-            <li>socialOne</li>
-            <li>socialTwo</li>
-            <li>scocialThree</li>
+    <footer class="footer">
+        <div class="footer-header">some small heading inside footer</div>
+        <ul class="social-links">
+            <li class="list-item-inline">
+                <a href="/" class="link">Social Media 1</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="/" class="link">Social Media 2</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="/"class="link">Social Media 3</a>
+            </li>
         </ul>
     </footer>
 
