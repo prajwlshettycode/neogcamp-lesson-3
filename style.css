@@ -58,6 +58,10 @@ hr{
     padding: 0rem 0.5rem;
 }
 
+.list-item {
+    padding-bottom: 3rem;
+}
+
 /** navigations **/
 
 .navigation{
